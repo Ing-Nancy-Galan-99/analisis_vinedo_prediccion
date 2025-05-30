@@ -36,4 +36,17 @@ p {
   max-width: none; /* para que no se limite al 100% */
 }
 
+/* Estilo para sección destacada */
+.section {
+  background-color: #fff8f0;
+  border-left: 6px solid #8B0000;
+  padding: 20px 30px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Georgia', serif;
+  color: #4a4a4a;
+  line-height: 1.6;
+  border-radius: 8px;
+}
 
