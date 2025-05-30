@@ -1,3 +1,4 @@
+/* Estilos globales */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -10,14 +11,10 @@ h1 {
   color: #8B0000;
   text-align: center;
   margin-top: 50px;
+  font-weight: 700;
 }
 
-p {
-  text-align: justify;
-  margin: 20px;
-}
-
-/* Este estilo es para las imágenes del encabezado */
+/* Encabezado con imágenes alineadas horizontalmente */
 .header-images {
   display: flex;
   justify-content: center;
@@ -27,26 +24,54 @@ p {
 }
 
 .header-images img {
-  height: 150px; /* altura fija para uniformidad */
+  height: 150px; /* altura uniforme */
   width: auto;
   border-radius: 8px; /* bordes redondeados */
   box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* sombra leve */
   display: block;
-  margin: 0; /* quito margen para que no interfiera con flex */
-  max-width: none; /* para que no se limite al 100% */
+  margin: 0;
+  max-width: none;
 }
 
-/* Estilo para sección destacada */
+/* Estilos para los párrafos generales */
+p {
+  text-align: justify;
+  margin: 20px;
+}
+
+/* Sección tipo artículo con texto centrado y formato elegante */
 .section {
   background-color: #fff8f0;
   border-left: 6px solid #8B0000;
-  padding: 20px 30px;
+  padding: 25px 40px;
   margin: 40px auto;
   max-width: 800px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
   font-family: 'Georgia', serif;
   color: #4a4a4a;
-  line-height: 1.6;
-  border-radius: 8px;
+  line-height: 1.8;
+  border-radius: 10px;
+  text-align: center;
 }
+
+.section h2 {
+  font-size: 2rem;
+  color: #8B0000;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #555;
+}
+
 
