@@ -12,14 +12,28 @@ h1 {
   margin-top: 50px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-}
-
 p {
   text-align: justify;
   margin: 20px;
 }
+
+/* Este estilo es para las imágenes del encabezado */
+.header-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* espacio entre imágenes */
+  padding: 10px;
+  background-color: #fff; /* fondo blanco para destacar */
+}
+
+.header-images img {
+  height: 150px; /* altura fija para uniformidad */
+  width: auto;
+  border-radius: 8px; /* bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* sombra leve */
+  display: block;
+  margin: 0; /* quito margen para que no interfiera con flex */
+  max-width: none; /* para que no se limite al 100% */
+}
+
+
