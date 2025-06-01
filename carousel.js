@@ -20,9 +20,3 @@ next.addEventListener('click', () => {
   index = (index + 1) % slides.length;
   showSlide(index);
 });
-
-// Rotación automática cada 5 segundos
-setInterval(() => {
-  index = (index + 1) % slides.length;
-  showSlide(index);
-}, 5000);
