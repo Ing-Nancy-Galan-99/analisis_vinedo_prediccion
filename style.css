@@ -39,7 +39,7 @@ p {
   margin: 20px;
 }
 
-/* Sección tipo artículo */
+/* Sección tipo artículo con texto centrado y formato elegante */
 .section {
   background-color: #fff8f0;
   border-left: 6px solid #8B0000;
@@ -74,66 +74,60 @@ p {
   color: #555;
 }
 
-/* 🎠 Carrusel estilos */
+/* Carrusel */
 .carousel {
-  margin-top: 30px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
+  margin: 20px auto;
+  max-width: 700px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .carousel h3 {
-  margin-bottom: 15px;
-  font-size: 1.5rem;
   color: #8B0000;
-  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .carousel-content p {
   display: none;
-  text-align: center;
   font-size: 1.1rem;
-  font-style: italic;
-  margin: 0;
+  text-align: center;
 }
 
 .carousel-content p.active {
   display: block;
-  animation: fade 0.5s ease-in-out;
 }
 
-@keyframes fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
+/* Botones fuera del cuadro */
 .carousel button {
-  background: #8b0000;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  padding: 8px 12px;
-  cursor: pointer;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1rem;
-  transition: background 0.3s;
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Posición de los botones */
+.carousel .prev {
+  left: -50px; /* Puedes ajustar según tu diseño */
+}
+
+.carousel .next {
+  right: -50px;
 }
 
 .carousel button:hover {
-  background: #a52a2a;
-}
-
-#prev {
-  left: 10px;
-}
-
-#next {
-  right: 10px;
+  background-color: #b30000;
+  transform: translateY(-50%) scale(1.1);
 }
