@@ -1,22 +1,28 @@
-const slides = document.querySelectorAll('.carousel-content p');
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
-let index = 0;
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.carousel-content p');
+  const prevButton = document.querySelector('.carousel .prev');
+  const nextButton = document.querySelector('.carousel .next');
+  let currentIndex = 0;
 
-function showSlide(i) {
-  slides.forEach((slide, idx) => {
-    slide.classList.toggle('active', idx === i);
+  // Mostrar el primer slide al inicio
+  slides[currentIndex].classList.add('active');
+
+  // Función para mostrar slide según el índice
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  // Botón anterior
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
   });
-}
 
-showSlide(index);
-
-prev.addEventListener('click', () => {
-  index = (index - 1 + slides.length) % slides.length;
-  showSlide(index);
-});
-
-next.addEventListener('click', () => {
-  index = (index + 1) % slides.length;
-  showSlide(index);
+  // Botón siguiente
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  });
 });
