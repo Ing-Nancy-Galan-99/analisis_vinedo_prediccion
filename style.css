@@ -14,7 +14,6 @@ h1 {
   font-weight: 700;
 }
 
-/* Encabezado con imágenes alineadas horizontalmente */
 .header-images {
   display: flex;
   justify-content: center;
@@ -73,3 +72,21 @@ p {
   line-height: 1.7;
   color: #555;
 }
+
+
+.charts-row {
+  display: flex;          
+  flex-wrap: wrap;        
+  gap: 20px;              
+  justify-content: center;
+}
+
+
+.charts-row img {
+  flex: 1 1 30%;          
+  max-width: 100%;        
+  height: auto;          
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
