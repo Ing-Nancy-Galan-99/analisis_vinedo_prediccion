@@ -74,19 +74,28 @@ p {
 }
 
 
+/* Contenedor de las gráficas - ahora en grid */
 .charts-row {
-  display: flex;          
-  flex-wrap: wrap;        
-  gap: 20px;              
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Se adaptan según el espacio */
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
 }
 
-
+/* Imágenes dentro del grid */
 .charts-row img {
-  flex: 1 1 30%;          
-  max-width: 100%;        
-  height: auto;          
+  width: 100%;                /* Se ajustan al contenedor */
+  max-width: 300px;           /* No más grandes de 300px */
+  height: auto;
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
+
+.charts-row img:hover {
+  transform: scale(1.05);     /* Zoom suave al pasar el mouse */
+}
+
 
