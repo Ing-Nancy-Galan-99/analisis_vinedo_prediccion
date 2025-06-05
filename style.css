@@ -98,4 +98,6 @@ p {
   transform: scale(1.05);     /* Zoom suave al pasar el mouse */
 }
 
-
+.section-wide {
+  max-width: 1200px;
+}
