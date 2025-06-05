@@ -24,7 +24,8 @@
     de todas las uvas para tener un mejor producto al fin del año?” , para la realizacion de este proyecto se planteo 
     una matriz de vision que tiene este proyecto.</p>
     <img src="imagen7.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
-    <h2>Dataset bruto (captura en campo , Datos sinteticos)</h2>
+    <h2>Dataset bruto 
+    (captura en campo , Datos sinteticos)</h2>
     <p>Para iniciar el análisis, se desarrolló un conjunto de datos sintético en RStudio, diseñado para emular condiciones reales 
     de producción en un viñedo con 14 parcelas, a lo largo de 5 años (2020–2024), con registros mensuales por cada etapa 
     fenológica del ciclo de la vida: Cuajado, Envero y Meseta. La generación de datos sigue una lógica controlada de variación 
@@ -42,9 +43,22 @@
     permiten calcular el Rendimiento, que representa la producción total mensual en kilogramos por parcela. Finalmente, Calidad es una variable numérica que resume múltiples factores 
     influyentes en la calidad del cultivo, posiblemente calculada mediante un modelo o fórmula compuesta. La variable Vino identifica el tipo de cepa cultivada, ya sea Merlot o Cabernet.</p>
     <img src="imagen de la primera data.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
-
-    
+  </section>
   
+  <section class="section">
+    <h2>Preprocesamiento de datos</h2>
+    <p>En el proceso de transformación de datos, se generaron nuevas variables que permitieron una mejor estructuración y análisis de la información. La variable original Parcela, que contenía 
+    etiquetas textuales como “Parcela_1”, fue reemplazada por id_parcela, un identificador numérico único para cada parcela, facilitando el manejo y análisis</p>
+    <p>De la variable Fecha, se extrajeron componentes temporales como Día, permitiendo análisis temporales más detallados sin depender de formatos complejos de fecha.</p>
+    <p>La variable categórica EtapaCiclo fue descompuesta en tres variables binarias: ciclo_Cuajado, ciclo_Envero y ciclo_Meseta. Cada una indica con un 1 o 0 si el registro corresponde a esa etapa
+    fenológica específica, facilitando que modelos y análisis puedan distinguir etapas sin ambigüedades.</p>
+    <p>Las variables originales numéricas como Temperatura, Lluvia, pH, GradoBrix, ConteoRacimos, PesoRacimos, Rendimiento y Calidad se conservaron, manteniendo sus valores cuantitativos para análisis 
+    directos.</p>
+    <p>Las variables categóricas binarias Poda y Plaga, originalmente en texto (“Sí” o “No”), se convirtieron a valores numéricos (1 para Sí, 0 para No), permitiendo su uso en modelos matemáticos y estadísticos.</p>
+    <p>Finalmente, la variable Vino, que indicaba la variedad (“Merlot” o “Cabernet”), fue convertida en variable binaria vino_Merlot, asignando 1 a registros de Merlot y 0 a Cabernet, para simplificar el análisis de 
+    esta característica en los modelos.
+    En conjunto, estas transformaciones facilitaron la limpieza, homogeneización y estructuración de la base de datos, preparando un dataset para las etapas posteriores de análisis y modelado predictivo.</p>
+    <img src="imagen de la primera data.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
   </section>
   
     <section class="section">
