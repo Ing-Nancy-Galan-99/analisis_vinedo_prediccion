@@ -28,17 +28,16 @@
     <p>Para iniciar el análisis, se desarrolló un conjunto de datos sintético en RStudio, diseñado para emular condiciones reales 
     de producción en un viñedo con 14 parcelas, a lo largo de 5 años (2020–2024), con registros mensuales por cada etapa 
     fenológica del ciclo de la vida: Cuajado, Envero y Meseta. La generación de datos sigue una lógica controlada de variación 
-    por parcela,año y etapa del ciclo. Cada parcela fue diseñada con un “perfil genético” propio, diferenciando variables de clima,
-    poda, plaga y tipo de uva. La variables iniciales creadas son:  Cada registro incluye la variableParcela, que señala el nombre 
-    o código de la parcela (por ejemplo, Parcela_1). La variable Fecha indica el día de medición establecido consistentemente el día 15 de cada mes,
-    y de ella se derivan las variables Año y Mes, que permiten el análisis temporal del comportamiento del cultivo. La variable EtapaCiclo señala la fase 
-    fenológica de la vid en ese momento, pudiendo tomar los valores “Cuajado” (desarrollo del fruto), “Envero” (cambio de color y maduración) o “Meseta” 
-    (fase de estabilidad previa a la cosecha).</p>
+    por parcela, año y etapa del ciclo. Cada parcela fue diseñada con un “perfil genético” propio, diferenciando variables de clima,
+    poda, plaga y tipo de uva. La variables iniciales creadas son: Parcela, que señala el nombre (por ejemplo, Parcela_1). La variable 
+    Fecha indica el día de medición establecido consistentemente el día 15 de cada mes, y las variables Año y Mes, que permiten el análisis 
+    temporal del comportamiento del cultivo. La variable EtapaCiclo señala la fase fenológica de la vida en ese momento, pudiendo tomar los 
+    valores “Cuajado” (desarrollo del fruto), “Envero” (cambio de color y maduración) o “Meseta” (fase de estabilidad previa a la cosecha).</p>
     <p>En cuanto a condiciones climáticas, Temperatura expresa la temperatura media mensual en grados Celsius, mientras que Lluvia representa la precipitación 
-    acumulada en milímetros, ambas directamente relacionadas con el desarrollo fisiológico de la vid. La variable pH se refiere al nivel de acidez del suelo, 
+    acumulada en milímetros, ambas directamente relacionadas con el desarrollo fisiológico, La variable pH se refiere al nivel de acidez del suelo, 
     influenciando la disponibilidad de nutrientes para la planta. Las variables Poda y Plaga indicandan si durante ese mes se realizaron labores de poda o se detectó 
     alguna plaga en la parcela, factores clave en el manejo agronómico y fitosanitario del cultivo.</p>
-    <p>La calidad del fruto se refleja a través de GradoBrix, que mide la concentración de azúcares en el jugo de la uva —un indicador directo de madurez y potencial enológico
+    <p>La calidad del fruto se refleja a través de GradoBrix, que mide la concentración de azúcares en el jugo de la uva un indicador directo de madurez y potencial enológico
     ConteoRacimos registra la cantidad estimada de racimos por planta, mientras que PesoRacimos muestra el peso promedio por racimo en kilogramos. Estas dos últimas variables 
     permiten calcular el Rendimiento, que representa la producción total mensual en kilogramos por parcela. Finalmente, Calidad es una variable numérica que resume múltiples factores 
     influyentes en la calidad del cultivo, posiblemente calculada mediante un modelo o fórmula compuesta. La variable Vino identifica el tipo de cepa cultivada, ya sea Merlot o Cabernet.</p>
