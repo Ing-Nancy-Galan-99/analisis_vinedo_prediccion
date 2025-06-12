@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 
 # Leer el archivo CSV (ajusta la ruta si es necesario)
-df <- read.csv("C:\\Users\\NANCY\\Documents\\datos_viñedo\\data_simulacion\\datos_vinedo_tratados1.csv")
+df <- read.csv("C:\\datos_vinedo_tratados1.csv")
 
 # Definir el umbral de calidad para clasificar parcelas
 quality_threshold <- quantile(df$Calidad, 0.25)  # Percentil 25
