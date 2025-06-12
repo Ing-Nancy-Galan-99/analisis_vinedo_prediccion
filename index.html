@@ -117,16 +117,22 @@
 
 
   <section class="section section-wide">
-    <h2>Panorama de Calidad Inicial</h2>
+    <h2>Calidad de las tierras del Viñedo mediante el modelo predictivo Random Forest</h2>
+    
+    <p>Tras realizar un análisis exploratorio y predictivo sobre el conjunto de datos proporcionado del viñedo, que contempla 14 parcelas identificadas, y considerando variables de tipo fenológico, agronómico, climático y de manejo (como plaga y poda),
+    se ha aplicado un enfoque de clasificación binaria para categorizar la calidad del fruto como Alta o Baja.El análisis se desarrolló con el objetivo de proyectar si todas las parcelas pueden alcanzar una calidad alta hacia el fin del año.</p>
+    <p>Se entrenó un Random Forest con métricas de validación sobresalientes con una Precisión total de 98.68% , Kappa de 0.9735 alto acuerdo entre predicción y realidad para este modelo se balanciaron las clase con Balanceo de clases con ROSE y Se comparó con un Árbol de Decisión 
+    de interpretación simple, aunque con menor precisión llegando a un 50% , Se proyectaron los datos para las 14 parcelas, utilizando valores promedio por tipo de vino y ajustando las variables al ciclo Meseta que es la fase final del año agrícola y se aplicó el modelo entrenado para 
+    predecir la categoría de calidad por parcela</p>
+
     <div class="charts-row">
     <img src="calidad_promedio_por_parcela.png" alt="Calidad promedio por parcela" />
     <img src="calidadpromedio_parcela_tipouva.png" alt="Distribución de calidad por tipo de uva" />
     <img src="distribuciondecalidadxtipouva.png" alt="Calidad promedio por parcela y tipo de uva" />      
     </div>
-    <p>Calidad Promedio por Parcela se observa que: La Parcela 1 sobresale notablemente con una calidad promedio de 93.3, posicionándose como la más destacada del viñedo
-    Las parcelas 2 a 11 mantienen una calidad promedio muy similar, entre 81.0 y 82.0, lo que refleja una homogeneidad productiva aceptable
-    Las parcelas 12 a 14 presentan las calidades más bajas, alrededor de 71.5, marcando un descenso significativo respecto al resto.</p>
-   
+
+    <p>actualmente las tierras del viñedo no aseguran una calidad del 100% de las uvas al final del año, Según este modelo el 42.86% alcanzarán calidad Alta hacia el cierre del año.</p>
+    
     <p>En Calidad Promedio por Parcela y Tipo de Uva se observa que: En esta se confirma que las parcelas 1 a 7, todas cultivando Merlot, obtienen calidades superiores y estables.
     Las parcelas 8 a 11, con Cabernet, aún mantienen calidades aceptables (~81), pero no superan al Merlot. Las parcelas 12 a 14, también con Cabernet, son las que presentan las calidades más bajas, en torno a 71.4.
     </p>
