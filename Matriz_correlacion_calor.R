@@ -5,7 +5,7 @@ library(dplyr)
 library(corrplot)
 library(RColorBrewer)
 
-df <- read.csv("C:\\Users\\NANCY\\Documents\\datos_viñedo\\data_simulacion\\datos_vinedo_tratados1.csv")
+df <- read.csv(datos_vinedo_tratados1.csv") 
 summary(df)
 
 #verificacion de datos nuelos en la data
