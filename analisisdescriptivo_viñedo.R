@@ -7,7 +7,7 @@ library(cluster)
 #install.packages("factoextra")
 library(factoextra)
 
-df <- read.csv("C:\\Users\\NANCY\\Documents\\datos_viñedo\\data_simulacion\\datos_vinedo_tratados1.csv")
+df <- read.csv("C:\\Un\\datos_vinedo_tratados1.csv")
 
 # Análisis de calidad por parcela y tipo de uva
 # 1. Calidad promedio por parcela
