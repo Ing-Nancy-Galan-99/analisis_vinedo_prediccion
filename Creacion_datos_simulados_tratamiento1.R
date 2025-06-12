@@ -5,7 +5,7 @@ file.choose() #busca laruta de los datos
 #print(ruta_datos) #presenta la ruta de los datos
 
 #leer data inicial 
-df <- read.csv("C:\\Users\\NANCY\\Documents\\datos_viñedo\\data_simulacion\\datos_vinedo_simulados.csv")
+df <- read.csv("C:\\datos_vinedo_simulados.csv")
 summary(df)
 
 #transformacion de los datos
