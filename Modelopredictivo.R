@@ -7,7 +7,7 @@ library(gridExtra)
 library(ROSE)
 
 # Cargar los datos
-datos <- read.csv("C:\\Users\\NANCY\\Documents\\datos_viñedo\\datos_vinedo_tratados1.csv")
+datos <- read.csv("C:\\datos_vinedo_tratados1.csv")
 print(summary(datos))
 
 # Crear variable categórica de calidad basada en la mediana
