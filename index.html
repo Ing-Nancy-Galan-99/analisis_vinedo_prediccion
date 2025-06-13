@@ -7,10 +7,10 @@
 </head>
 <body>
   <header class="header-images">
-    <img src="imagen1.jpg" alt="Viñedo 1" />
-    <img src="imagen4.jpg" alt="Viñedo 4" />
-    <img src="imagen5.jpg" alt="Viñedo 5" />
-    <img src="imagen6.jpg" alt="Viñedo 6" />
+    <img src="imagenes/imagen1.jpg" alt="Viñedo 1" />
+    <img src="imagenes/imagen4.jpg" alt="Viñedo 4" />
+    <img src="imagenes/imagen5.jpg" alt="Viñedo 5" />
+    <img src="imagenes/imagen6.jpg" alt="Viñedo 6" />
   </header>
 
   <h1>Proyecto de Análisis de Calidad en Viñedo</h1>
@@ -23,7 +23,7 @@
     Buscando contestar la pregunta planteada “Las tierras de mi viñedo podrán cubrir con la calidad al 100% 
     de todas las uvas para tener un mejor producto al fin del año?” , para la realizacion de este proyecto se planteo 
     una matriz de vision que tiene este proyecto.</p>
-    <img src="imagen7.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
+    <img src="imagenes/imagen7.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
   </section>
 
     <section class="section">
@@ -44,7 +44,7 @@
     ConteoRacimos registra la cantidad estimada de racimos por planta, mientras que PesoRacimos muestra el peso promedio por racimo en kilogramos. Estas dos últimas variables 
     permiten calcular el Rendimiento, que representa la producción total mensual en kilogramos por parcela. Finalmente, Calidad es una variable numérica que resume múltiples factores 
     influyentes en la calidad del cultivo, posiblemente calculada mediante un modelo o fórmula compuesta. La variable Vino identifica el tipo de cepa cultivada, ya sea Merlot o Cabernet.</p>
-    <img src="imagen de la primera data.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
+    <img src="imagenes/imagen de la primera data.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
   </section>
   
   <section class="section">
@@ -59,12 +59,12 @@
     <p>Las variables Poda y Plaga, que originalmente estaban codificadas como cadenas de texto con valores "Sí" y "No", fueron transformadas a variables binarias representadas numéricamente, donde 1 indica 
     presencia (Sí) y 0 ausencia (No). Esta conversión permitió integrar correctamente estas variables dentro de modelos estadísticos o de machine learning, que requieren entradas numéricas para procesar relaciones 
     y patrones de forma eficiente.</p>
-    <img src="imagen de la data tratada.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
+    <img src="imagenes/imagen de la data tratada.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
  </section>
 
   <section class="section">
     <h2>Observaciones sobre Correlaciones</h2>
-    <img src="imagen8.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
+    <img src="imagenes/imagen8.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
     <p>Luego de generar la matriz de correlación, se identificaron dos grupos de variables según su grado de relación con la calidad de uva:</p>
     <h2>Correlaciones Fuertes (rojo oscuro)</h2>
     <p>pH ↔ Calidad: Se observa una correlación positiva robusta (~0.58), lo que indica que suelos con pH más alto tienden a producir uvas de mejor calidad.
@@ -83,9 +83,9 @@
 <section class="section section-wide">
     <h2>Panorama de Calidad Inicial</h2>
     <div class="charts-row">
-    <img src="calidad_promedio_por_parcela.png" alt="Calidad promedio por parcela" />
-    <img src="calidadpromedio_parcela_tipouva.png" alt="Distribución de calidad por tipo de uva" />
-    <img src="distribuciondecalidadxtipouva.png" alt="Calidad promedio por parcela y tipo de uva" />      
+    <img src="imagenes/calidad_promedio_por_parcela.png" alt="Calidad promedio por parcela" />
+    <img src="imagenes/calidadpromedio_parcela_tipouva.png" alt="Distribución de calidad por tipo de uva" />
+    <img src="imagenes/distribuciondecalidadxtipouva.png" alt="Calidad promedio por parcela y tipo de uva" />      
     </div>
     <p>Calidad Promedio por Parcela se observa que: La Parcela 1 sobresale notablemente con una calidad promedio de 93.3, posicionándose como la más destacada del viñedo
     Las parcelas 2 a 11 mantienen una calidad promedio muy similar, entre 81.0 y 82.0, lo que refleja una homogeneidad productiva aceptable
@@ -104,7 +104,7 @@
 
     <section class="section">
     <h2>Hallazgos Clave: ¿Qué Hace a una Parcela de Viñedo de Alta Calidad?</h2>
-    <img src="factores calidad.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
+    <img src="imagenes/factores calidad.png" alt="Descripción de la imagen" style="max-width: 100%; height: auto; margin-bottom: 15px;" />
     <p>Tras analizar los factores agronómicos, se identificaron patrones consistentes que diferencian a las parcelas de alta calidad. Estos son los factores más influyentes:</p>
     <h2>Mayor calidad se asocia con:</h2>
     <p>Más temperatura promedio (+0.9°C) , Mayor poda (+0.3 unidades) , Mayor concentración de azúcares (Grado Brix) (+0.8) ,Menor presencia de plagas (–0.1), Menos lluvia acumulada (–8.3 mm)
@@ -126,25 +126,25 @@
     predecir la categoría de calidad por parcela</p>
 
     <div class="charts-row">
-    <img src="imagen9.png" alt="metricas rf" />
-    <img src="imagen10.png" alt="metricas arbol" />
-    <img src="imagen11.png" alt="importancia de las variables en rf" />      
+    <img src="imagenes/imagen9.png" alt="metricas rf" />
+    <img src="imagenes/imagen10.png" alt="metricas arbol" />
+    <img src="imagenes/imagen11.png" alt="importancia de las variables en rf" />      
     </div>
 
     <p>En el modelo Random Forest, las variables más influyentes para predecir la calidad de las uvas fueron: ConteoRacimos, GradoBrix, Rendimiento, Temperatura, fases del ciclo como Meseta y Cuajado, y el tipo de vino (Merlot o Cabernet). Estas variables reflejan aspectos clave del manejo agronómico
     y del entorno: más racimos o mayor rendimiento no siempre implican mejor calidad; en cambio, un buen nivel de azúcar (Brix) y temperaturas controladas sí aportan positivamente. Las fases del ciclo también impactan, especialmente al consolidarse la calidad del fruto.</p>
 
     <div class="charts-row">
-    <img src="imagen12.png" alt="distribucion de claidad" />
-    <img src="imagen13.png" alt="probabilidad de calida" />
-    <img src="imagen14.png" alt="temp calidad" />      
+    <img src="imagenes/imagen12.png" alt="distribucion de claidad" />
+    <img src="imagenes/imagen13.png" alt="probabilidad de calida" />
+    <img src="imagenes/imagen14.png" alt="temp calidad" />      
     </div>
     <p>Actualmente las tierras del viñedo no aseguran una calidad del 100% de las uvas al final del año, Según este modelo el 42.86% alcanzarán calidad Alta hacia el cierre del año con al rededor de 6 parcelas y el porcentaje de calidad baja es de 57.1% con al menos un prediccion de 8 parcelas de las 14.</p>
     <p>Cabernet domina la calidad alta 6 de 7 parcelas entre ellas las parcelas 9,10,13,11 y 14 , en cuanto a Merlot está luchando por posicionarse en almenos una parcela con buen rendimiento pero se encuentra en las parcelas criticas y de mayor riesgo de calidas siendo parcelas como 5,6,3,2 y 7 <p>
 
     <div class="charts-row">
-    <img src="imagen15.png" alt="tendencias" />
-    <img src="imagen16.png" alt="tendencia a lo largo" />   
+    <img src="imagenes/imagen15.png" alt="tendencias" />
+    <img src="imagenes/imagen16.png" alt="tendencia a lo largo" />   
     </div>
 
     <p>En el contexto del proyecto el cual se esta realizando un analisis de datos agrícolas, una tendencia representa el comportamiento general de una variable a lo largo del tiempo o en diferentes condiciones poniendo de ejmplo, en un viñedo, una tendencia puede mostrarnos si la calidad de las uvas tiende a mejorar
