@@ -34,7 +34,7 @@ df_final <- df %>%
 #Imprime la cabeceras de los nuevos datos
 print(head(df_final))
 #Guardar la nueva data en la ruta 
-write.csv(df_final, "C:\\Users\\NANCY\\Documents\\datos_viñedo\\data_simulacion\\datos_vinedo_tratados1.csv", row.names = FALSE)
+write.csv(df_final, "C:\\datos_vinedo_tratados1.csv", row.names = FALSE)
 
 
 
