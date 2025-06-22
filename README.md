@@ -13,7 +13,7 @@ donde encontraras los resultados
 
 ## 📊 Objetivo del Proyecto
 
-El propósito principal fue explorar los factores que influyen en la **calidad del cultivo de uva** y, mediante modelos como **Random Forest y árboles de decisión**, clasificar las parcelas como de **calidad alta o baja**. Además, se realiza una **proyección futura** para predecir cómo evolucionarán estas parcelas al cierre del año.
+El propósito principal fue explorar los factores que influyen en la **calidad del cultivo de uva** y, mediante el modelo como **Random Forest**, clasificar las parcelas como de **calidad alta o baja**. Además, se realiza una **proyección futura** para predecir cómo evolucionarán estas parcelas al cierre del año.
 
 ## 🔍 Dataset
 
